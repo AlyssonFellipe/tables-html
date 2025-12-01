@@ -5,11 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/table.js" defer></script>
 
     <title>Tabelas HTML</title>
 </head>
 <body>
-    <table>
+    <div class="site-width">
+        <input type="button" value="Cadastrar" id="btnOpenPopup">
+    </div>
+    <div id="popup">
+        <div class="popup-content site-width">
+            <span id="btnClose">X</span>
+            <form action="">
+                <div>
+                    <label for="inBanda">Banda</label>
+                    <input type="text" id="inBanda">
+                </div>
+                <div>
+                    <label for="inMusica">Música</label>
+                    <input type="text" id="inMusica">
+                </div>
+                <div>
+                    <input type="button" value="Gravar" id="btnGravar">
+                </div>
+            </form>
+        </div>
+    </div>
+    <table class="site-width">
         <caption>Lista de Músicas</caption>
         <thead>
             <tr>
@@ -17,17 +39,17 @@
                 <th>Música</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody id="musicas">
             <tr>
-                <td rowspan="3">Pitty</td>
+                <td>Pitty</td>
                 <td>Teto de vidro</td>
             </tr>
             <tr>
-                <!-- <td>Pitty</td> -->
+                <td>Pitty</td>
                 <td>Admirável chip novo</td>
             </tr>
             <tr>
-                <!-- <td>Pitty</td> -->
+                <td>Pitty</td>
                 <td>Máscara</td>
             </tr>
         </tbody>
